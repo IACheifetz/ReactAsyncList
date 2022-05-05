@@ -4,9 +4,9 @@ export default function AlbumList({ Albums }) {
   return <div className='album-list'>
     { 
       Albums.map(Album => 
-        <div className="album" key={Album.Title + Album.Title}>
+        <div className="album" key={Album.Title + Album.Artist}>
           <h2>Title: {Album.Title}</h2>
-          <h3>Artist(s): {Album.Title}</h3>
+          <h3>Artist(s): {Album.Artist}</h3>
           <p>Released: {Album.ReleaseDate}</p>
           <p>Genre: {Album.Genre} </p>
         </div>
