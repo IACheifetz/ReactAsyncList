@@ -5,10 +5,10 @@ export default function MovieList({ Movies }) {
     { 
       Movies.map(Movie => 
         <div className="movie" key={Movie.Title + Movie.Director}>
-          <h2>Movie Title: {Movie.Name}</h2>
+          <h2>Movie Title: {Movie.Title}</h2>
           <h3>Released In: {Movie.ReleaseDate}</h3>
           <p>Directed By: {Movie.Director}</p>
-          <p>Genre: {Movie.Genre}  </p>
+          <p>Genre: {Movie.genres}  </p>
         </div>
       )
     }
